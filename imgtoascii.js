@@ -2,19 +2,17 @@ let imagen;
 let canvas = document.createElement('canvas');
 let context = canvas.getContext('2d');
 let finalimg = "";
-const Px = 200;
-const Py = 100;
+
 
 loadFile = function (event) {
-    imagen = document.getElementById('output');
+    imagen = document.getElementById('image-output');
     imagen.style.filter = 'grayscale(1)';
     imagen.src = URL.createObjectURL(event.target.files[0]);
-
+    
+    
     imagen.onload = function () {
-        canvas.width = Px;
-        canvas.height = Py;
-        context.drawImage(imagen, 0, 0, Px, Py);
-        img2ascii(Px, Py);
+        context.drawImage(imagen, 0, 0, canvas.width,  canvas.height);
+        img2ascii(canvas.width, canvas.height);
     };
 };
 

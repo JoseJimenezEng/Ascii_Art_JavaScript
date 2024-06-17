@@ -5,15 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image and Video to ASCII</title>
-    <script src="./imgtoascii.js"></script>
+    
     
 </head>
 
 <body>
     <h2>Sube una imagen</h2>
     <input type="file" accept="image/*" onchange="loadFile(event)">
-    <img id="output">
+    <img id="image-output">
     <pre id="imgascii"></pre>
+
+    <h2>Convert Video to ASCII</h2>
+    <input type="file" accept="video/*" onchange="loadVideo(event)">
+    <video id="video-output" controls></video>
+    <pre id="videoascii"></pre>
+    <script src="./imgtoascii.js"></script>
+    <script src="./videotoascii.js"></script>
 
 </body>
 
