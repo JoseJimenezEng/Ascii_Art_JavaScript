@@ -1,18 +1,18 @@
 let imagen;
-let imgCanvas = document.createElement('canvas');
-let context = imgCanvas.getContext('2d');
+let canvas = document.createElement('canvas');
+let context = canvas.getContext('2d');
 let finalimg = "";
 
 
-window.loadFile = function (event) {
+loadFile = function (event) {
     imagen = document.getElementById('image-output');
     imagen.style.filter = 'grayscale(1)';
     imagen.src = URL.createObjectURL(event.target.files[0]);
     
     
     imagen.onload = function () {
-        context.drawImage(imagen, 0, 0, imgCanvas.width/5,  imgCanvas.height/5);
-        img2ascii(imgCanvas.width/5, imgCanvas.height/5);
+        context.drawImage(imagen, 0, 0, canvas.width/3,  canvas.height/3);
+        img2ascii(canvas.width/3, canvas.height/3);
     };
 };
 

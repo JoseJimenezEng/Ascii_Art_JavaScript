@@ -17,9 +17,9 @@ function drawAsciiFrame() {
     if (video.paused || video.ended) {
         return;
     }
-    videoContext.drawImage(video, 0, 0, videoCanvas.width, videoCanvas.height);
-    let imageData = videoContext.getImageData(0, 0, videoCanvas.width, videoCanvas.height).data;
-    let asciiFrame = convertToAscii(imageData, videoCanvas.width, videoCanvas.height);
+    videoContext.drawImage(video, 0, 0, videoCanvas.width/3, videoCanvas.height/3);
+    let imageData = videoContext.getImageData(0, 0, videoCanvas.width/3, videoCanvas.height/3).data;
+    let asciiFrame = convertToAscii(imageData, videoCanvas.width/3, videoCanvas.height/3);
     console.log(videoascii)
     videoascii.textContent = asciiFrame;
     requestAnimationFrame(drawAsciiFrame);
