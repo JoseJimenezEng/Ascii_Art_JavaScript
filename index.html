@@ -5,23 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image and Video to ASCII</title>
-    
+    <link rel="stylesheet" href="style.css">
     
 </head>
 
 <body>
-    <h2>Sube una imagen</h2>
-    <input type="file" accept="image/*" onchange="loadFile(event)">
-    <img id="image-output">
-    <pre id="imgascii"></pre>
 
-    <h2>Convert Video to ASCII</h2>
-    <input type="file" accept="video/*" onchange="loadVideo(event)">
-    <video id="video-output" controls></video>
-    <pre id="videoascii"></pre>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <div class="content">
+                    <span>>_ ASCII Art</span>
+                </div>
+            </div>
+            <div class="elements">
+                <div class="content">
+                    <span>Home</span><span>Gallery</span><span>About</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <article>
+                <div class="imgtoascii">
+                    <!-- REACT -->
+                    <h2>Sube una imagen</h2>
+                    <input type="file" accept="image/*" onchange="loadFile(event)">
+                    <img id="image-output">
+                    <pre id="imgascii"></pre>
+                </div>
+            </article>
+            <article>
+                <div class="vidtoascii">
+                    <!-- REACT -->
+                    <h2>Convert Video to ASCII</h2>
+                    <input type="file" accept="video/*" onchange="loadVideo(event)">
+                    <video id="video-output" controls></video>
+                    <pre id="videoascii"></pre>
+                    
+                </div>
+            </article>
+
+            <article>
+                <div class="about">
+
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            
+        </div>
+    </footer>
     <script src="./imgtoascii.js"></script>
     <script src="./videotoascii.js"></script>
-
 </body>
 
 </html>
