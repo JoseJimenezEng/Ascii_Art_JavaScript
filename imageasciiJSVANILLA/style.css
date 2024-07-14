@@ -5,7 +5,8 @@ body{
     margin: 0;
     box-sizing: border-box;
     font-family: "Press Start 2P", system-ui;
-
+	background-color: #020127;
+color: white;
 }
 
 
@@ -55,6 +56,14 @@ header{
     align-items: center;
 }
 
+
+pre{
+    width: 707px;
+    height: 750px;
+    border: 2px dotted;
+   
+}
+
 #video-output, #image-output {
     width: 0px;
     height: 0px;
@@ -88,12 +97,6 @@ input[type='file'] {
     left: 5px;
   }
 
-pre{
-    width: 707px;
-    height: 750px;
-    border: 2px dotted;
-   
-}
 
 @keyframes border-dance {
     0% {
