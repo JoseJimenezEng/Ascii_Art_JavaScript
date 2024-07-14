@@ -25,6 +25,12 @@ header{
 
 .header .elements .content{
     display: flex;
-    gap: 1em;
+    gap: 3em;
+}
+
+.header .elements .content >*:hover{
+    transition: 1s;
+    cursor: pointer;
+    color: #066EB5;
 }
 

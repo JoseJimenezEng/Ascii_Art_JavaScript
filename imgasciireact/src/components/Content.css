@@ -6,8 +6,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-}
+    height: 120vh;
+    
+
+} 
 
 .input{
     padding: 1em;
@@ -42,5 +44,12 @@ input[type=file]::file-selector-button:active {
 }
 
 .dot{
-    border-style: dotted;
+  border-style: dotted;
+  border-color: whitesmoke;
 }
+
+pre{
+  background-color: black;
+  color: whitesmoke;
+}
+
