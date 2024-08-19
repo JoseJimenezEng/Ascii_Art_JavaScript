@@ -5,6 +5,7 @@ const Content = () => {
   const [asciiArt, setAsciiArt] = useState('');
 
   const handleImageUpload = (event) => {
+    document.getElementById("input").classList.add("noDisp");
     const file = event.target.files[0];
     if (file) {
       const reader = new FileReader();
@@ -24,21 +25,21 @@ const Content = () => {
   const convertToAscii = (media) => {
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
+    canvas.width = canvas.width/2; 
+    canvas.height = canvas.height/2; 
 
+    ctx.drawImage(media, 0, 0, canvas.width, canvas.height);
 
-    ctx.drawImage(media, 0, 0, canvas.width / 3, canvas.height / 3);
-
-    const imgData = ctx.getImageData(0, 0, canvas.width / 3, canvas.height / 3);
+    const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
     const pixels = imgData.data;
 
-    const asciiChars = "@%#*+=-:. "; // Caracteres ASCII de mayor a menor densidad
-
+    const asciiChars = "@%#*+=-:. "; 
     let ascii = '';
 
-    for (let y = 0; y < canvas.height / 3; y++) {
+    for (let y = 0; y < canvas.height; y++) {
       let line = '';
-      for (let x = 0; x < canvas.width / 3; x++) {
-        const offset = (y * canvas.width / 3 + x) * 4;
+      for (let x = 0; x < canvas.width; x++) {
+        const offset = (y * canvas.width + x) * 4;
         const r = pixels[offset];
         const g = pixels[offset + 1];
         const b = pixels[offset + 2];
@@ -56,7 +57,7 @@ const Content = () => {
   return (
 
     <div className="main">
-      <div className="input">
+      <div className="input" id='input'>
         <input type="file" id='asciiart' accept="image/*" onChange={handleImageUpload} />
       </div>
       <div className="pre" id='asciiimg'>

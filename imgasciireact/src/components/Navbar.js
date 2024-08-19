@@ -10,11 +10,7 @@ const Navbar = () => {
                     <span>&gt;_ ASCII Art</span>
                 </div>
             </div>
-            <div className="elements">
-                <div className="content">
-                    <span>Home</span><span>Gallery</span><span>About</span>
-                </div>
-            </div>
+          
         </div>
     </header>
   );
