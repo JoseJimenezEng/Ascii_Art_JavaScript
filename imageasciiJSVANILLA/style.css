@@ -24,20 +24,11 @@ header{
     height: 3em;
     width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-.header >*{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
-.header .elements .content{
-    display: flex;
-    gap: 1em;
-}
 
 
 
