@@ -1,13 +1,16 @@
 # ASCII Art Converter
 Este proyecto es una aplicación en React que permite convertir imágenes en arte ASCII. Sube una imagen y la aplicación la transformará en un conjunto de caracteres ASCII que representan la imagen.
 ## DEMO
+
+**PRUEBA** ASCII ART JAVASCRIPT VANILLA (ASCII ART VIDEO E IMAGENES): https://asciiartjs.netlify.app/ 
+
+**PRUEBA** ASCII ART REACT (ASCII ART SOLO IMAGENES): https://asciiartreact.netlify.app/
+
 ![image](https://github.com/user-attachments/assets/608e5515-00ac-4a73-9a85-1db62a5206aa)
 
 ![image](https://github.com/user-attachments/assets/6591852e-20d2-450d-a922-a3150349f02e)
 
-URL ASCII ART JAVASCRIPT VANILLA (ASCII ART VIDEO E IMAGENES): https://asciiartjs.netlify.app/ 
 
-URL ASCII ART REACT (ASCII ART SOLO IMAGENES): https://asciiartreact.netlify.app/
 
 Sube una imagen cualquiera, y verás cómo se transforma en una representación en ASCII en la pantalla.
 ## Funcionamiento
