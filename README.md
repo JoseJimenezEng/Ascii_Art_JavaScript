@@ -1,8 +1,11 @@
 # ASCII Art Converter
 Este proyecto es una aplicación en React que permite convertir imágenes en arte ASCII. Sube una imagen y la aplicación la transformará en un conjunto de caracteres ASCII que representan la imagen.
 ## DEMO
-URL
+URL ASCII ART JAVASCRIPT VANILLA (ASCII ART VIDEO E IMAGENES): 
+URL ASCII ART REACT (ASCII ART SOLO IMAGENES): 
 Sube una imagen cualquiera, y verás cómo se transforma en una representación en ASCII en la pantalla.
+## Funcionamiento
+1. recorremos cada píxel de la imagen fila por fila (y) y columna por columna (x). Luego, extraemos los valores de RGB de cada píxel y calculamos su promedio para determinar la luminosidad. Esa luminosidad determina el caracter a reemplazar el pixel. Luego, se se concatena caracter a caracter, que al final representa la imagen en forma de arte ASCII.
 ## Características
 ### -Conversión de imágenes a ASCII: 
 Convierte cualquier imagen en arte ASCII utilizando una paleta de caracteres.
@@ -17,25 +20,3 @@ Biblioteca de JavaScript para construir interfaces.
 Se utiliza para procesar la imagen y extraer los datos de los píxeles.
 ### -JavaScript: 
 Para manejar la lógica de conversión y renderizado.
-## Instalación y uso
-### 1. Clona este repositorio:
-
-git clone https://github.com/JoseJimenezEng/Ascii_Art_JavaScript.git
-Ingresa a la carpeta donde clonaste el repo
-### 2. Instala las dependencias:
-```
-npm install
-```
-### 3. Inicia la aplicación:
-```
-npm run dev
-```
-## Sube una imagen:
-En la página principal, selecciona una imagen usando el botón.
-La imagen se convertirá automáticamente en arte ASCII y se mostrará en la pantalla.
-
-## Personalización
-Puedes modificar el conjunto de caracteres ASCII en la función convertToAscii dentro de Content.js para obtener diferentes efectos visuales.
-```
-const asciiChars = "@%#*+=-:. ";
-```
